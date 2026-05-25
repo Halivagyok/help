@@ -92,6 +92,18 @@ for(var entry : map.entrySet()) {
 }
 ```
 
+## Grouping (TreeMap with containsKey)
+```java
+TreeMap<Integer, Integer> mL = new TreeMap<>();
+for(Madarak m : madar){
+    if (mL.containsKey(m.avgM)) {
+        mL.put(m.avgM, mL.get(m.avgM) + 1);
+    } else {
+        mL.put(m.avgM, 1);
+    }
+}
+```
+
 ### JavaFX - About Dialog
 ```java
 @FXML 
